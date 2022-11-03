@@ -1,0 +1,140 @@
+.company-history {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 60px 0 100px 0;
+
+    @include vp-1023 {
+      padding: 60px 0 80px 0;
+    }
+
+    @include vp-767 {
+      max-width: 380px;
+      padding: 11px 0 75px 0;
+    }
+  }
+
+  &__image-wrapper {
+    margin-right: 100px;
+
+    @include vp-1919 {
+      margin-right: calc((100vw - 770px) * 0.07);
+    }
+
+    align-self: flex-start;
+
+    @include vp-1023 {
+      margin-right: 28px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &__image {
+    align-self: flex-start;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    &.is-open .company-history__hidden-content {
+      visibility: visible;
+      height: auto;
+      overflow: initial;
+      opacity: 1;
+    }
+
+    &.no-js .company-history__hidden-content {
+      visibility: visible;
+      height: auto;
+      overflow: initial;
+      opacity: 1;
+    }
+
+    &.no-js .company-history__button {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 51px;
+
+    margin: 0;
+    margin-bottom: 10px;
+
+    @include vp-767 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+
+    margin: 0;
+    margin-bottom: 21px;
+
+    @include vp-1023 {
+      margin-bottom: 19px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 19px;
+
+      margin-bottom: 18px;
+
+      &-end {
+        display: none;
+      }
+    }
+  }
+
+  &__hidden-content {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+  }
+
+  &__button {
+    align-self: flex-start;
+    padding: 12px 13px 10px 13px;
+    margin-top: 20px;
+    text-align: center;
+    min-width: 180px;
+
+    color: #00b2ff;
+    text-transform: uppercase;
+
+    border: 1px solid #00b2ff;
+    background-color: $color-default-white;
+    cursor: pointer;
+
+    @include vp-1023 {
+      margin-top: 0;
+    }
+
+    @include vp-767 {
+      padding: 8px 40px 12px 40px;
+      min-width: auto;
+    }
+
+    @include hover-focus {
+      background-color: #00b3ff;
+      color: #ffffff;
+    }
+  }
+}

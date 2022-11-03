@@ -1,0 +1,237 @@
+.services {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #041827;
+  color: $color-default-white;
+
+  &__wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 35px 0 140px 0;
+
+    @include vp-1023 {
+      padding: 27px 0 80px 0;
+    }
+
+    @include vp-767 {
+      padding: 24px 0 84px 0;
+    }
+  }
+
+  &__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+
+    margin-bottom: 51px;
+
+    @include vp-1023 {
+      margin-bottom: 37px;
+    }
+
+    @include vp-767 {
+      font-size: 28px;
+      line-height: 140%;
+
+      padding-right: 38px;
+      margin-bottom: 27px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 29% 29% 29%;
+    column-gap: 6.9%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    @include vp-1023 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 250px;
+      row-gap: 30px;
+    }
+  }
+
+  &__link-wrapper {
+    position: relative;
+
+    height: 650px;
+    width: 100%;
+    padding: 30px 40px 50px 40px;
+
+    color: $color-default-white;
+
+    @include retina {
+      background: url("../../img/services-common-image@2x.jpg"), $color-default-black;
+      background-size: 1493px 817px;
+      background-repeat: no-repeat;
+
+      &--first {
+        background-position: -189px -115px;
+      }
+
+      &--second {
+        background-position: -529px -115px;
+      }
+
+      &--third {
+        background-position: -895px -111px;
+      }
+    }
+
+    @include retina-1023 {
+      background: url("../../img/services-common-image@2x.jpg"), $color-default-black;
+      background-size: 1493px 817px;
+      background-repeat: no-repeat;
+
+      &--first {
+        background-position: -229px -540px;
+      }
+
+      &--second {
+        background-position: -584px -320px;
+      }
+
+      &--third {
+        background-position: -180px -360px;
+      }
+    }
+
+    @include retina-767 {
+      background: url("../../img/services-common-image@2x.jpg"), $color-default-black;
+      background-size: 1493px 817px;
+      background-repeat: no-repeat;
+
+      &--first {
+        background-position: -380px -280px;
+      }
+
+      &--second {
+        background-position: -329px -535px;
+      }
+
+      &--third {
+        background-position: -149px -360px;
+      }
+    }
+
+    background: url("../../img/services-common-image.jpg"), $color-default-black;
+
+    background-repeat: no-repeat;
+    background-size: 1493px 817px;
+
+    &--first {
+      background-position: -189px -115px;
+    }
+
+    &--second {
+      background-position: -529px -115px;
+    }
+
+    &--third {
+      background-position: -895px -111px;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      content: "";
+      width: 60px;
+      height: 60px;
+
+      background-color: #00b2ff;
+      border-radius: 3px 0 0 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 26px;
+      right: 26px;
+
+      background-image: url("../img/sprite/right-arrow-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 5px;
+      height: 8px;
+
+      z-index: 3;
+    }
+
+    @include hover-focus {
+      &::after {
+        background-color: #007fb6;
+      }
+
+      & .services__link-title {
+        opacity: 0.6;
+      }
+    }
+
+    @include vp-1023 {
+      height: 250px;
+      padding-top: 20px;
+
+      &--first {
+        background-position: -229px -540px;
+      }
+
+      &--second {
+        background-position: -584px -320px;
+      }
+
+      &--third {
+        background-position: -180px -360px;
+      }
+    }
+
+    @include vp-767 {
+      padding-top: 6px;
+      padding-left: 28px;
+      padding-right: 110px;
+
+      &--first {
+        background-position: -380px -299px;
+      }
+
+      &--second {
+        background-position: -369px -535px;
+      }
+
+      &--third {
+        background-position: -883px -380px;
+      }
+
+      &::after {
+        width: 40px;
+        height: 40px;
+      }
+
+      &::before {
+        bottom: 17px;
+        right: 17px;
+      }
+    }
+  }
+
+  &__link-title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    @include vp-1023 {
+      max-width: 150px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  display: flex;
+
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  color: #f2f5f7;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 28px 60px 37px 0;
+    margin: 0 auto;
+    max-width: 1220px;
+
+    align-items: center;
+
+    @include vp-1023 {
+      padding: 20px 20px 40px 0;
+
+      align-items: flex-start;
+    }
+
+    @include vp-767 {
+      padding: 10px 10px 20px 0;
+      align-items: center;
+    }
+  }
+
+  &__logo-wrapper {
+    display: flex;
+
+    @include hover {
+      & .main-header__logo-icon {
+        opacity: 0.6;
+      }
+
+      & .main-header__logo-title {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__logo-icon {
+    margin: auto 0;
+    margin-right: 15px;
+
+    @include vp-767 {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style-type: none;
+
+    @include vp-1023 {
+      margin: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__contacts-item {
+    margin: 5px 30px 5px 0;
+    min-width: 224px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include vp-1023 {
+      min-width: auto;
+      margin-right: 20px;
+    }
+  }
+
+  &__contacts-icon {
+    margin-right: 15px;
+  }
+
+  &__contacts-text {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #f2f5f7;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__logo-title {
+    margin: auto 0;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+
+    @include vp-1023 {
+      min-width: auto;
+    }
+  }
+
+  &__phone-link {
+    display: flex;
+    align-items: center;
+
+    @include hover {
+      & .main-header__contacts-text {
+        opacity: 0.6;
+      }
+
+      & .main-header__contacts-icon {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__call-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0;
+    box-sizing: border-box;
+
+    border: 1px solid #f2f5f7;
+
+    @include vp-1023 {
+      display: none;
+    }
+
+    @include hover-focus {
+      background-color: #00b2ff;
+      outline: none;
+    }
+  }
+}

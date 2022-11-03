@@ -24,3 +24,16 @@
     opacity: 0.8;
   }
 }
+
+.button {
+  display: block;
+  margin: 0;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #f2f5f7;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+  border-radius: 3px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <title>Форма</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="modal modal is-active">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <section class="form-section form-section--modal">
+            <div class="form-section__wrapper">
+              <h2 class="form-section__title">
+                Закажите звонок
+              </h2>
+              <p class="form-section__text">
+                Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+              </p>
+              <form method="post" action="https://echo.htmlacademy.ru/" class="form-section__form form">
+                <fieldset class="form__item form__item--contacts">
+                  <div class="form__item-wrapper">
+                    <h3 class="form__title visually-hidden">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+                    <label class="form__label">
+                      <span class="form__input-title visually-hidden">Имя</span>
+                      <input class="form__text-input" placeholder="Имя" name="name" type="text" required>
+                    </label>
+                    <label class="form__label">
+                      <span class="form__input-title visually-hidden">Телефон</span>
+                      <input class="form__text-input" name="tel" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" data-phone-pattern='+7 (___) ___-__-__' data-phone-clear = 'false' type="tel" required>
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__item form__item--question">
+                  <div class="form__item-wrapper">
+                    <h3 class="form__title visually-hidden">Ваш вопрос</h3>
+                    <div class="form__comment-container">
+                      <textarea class="form__text-input form__textarea" name="question" placeholder="Ваш вопрос"></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form__button-container">
+                  <button class="form__button button" type="submit">ЗАДАТЬ ВОПРОС</button>
+                  <label class="form__control">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="approval" required>
+                    <span class="form__mark">
+                      <svg class="form__mark-icon" width="8" height="8">
+                        <use xlink:href="img/sprite_auto.svg#tick-icon"></use>
+                      </svg>
+                    </span>
+                    <span class="form__text">Я согласен на обработку  персональных данных</span>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

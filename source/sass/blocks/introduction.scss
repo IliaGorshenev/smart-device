@@ -1,0 +1,130 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  min-height: 880px;
+  padding: 300px 0 100px 0;
+
+  color: #f2f5f7;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 155%;
+
+  background: url("../../img/circuit-boards-background.jpg"), linear-gradient(180deg, rgba(138, 143, 147, 1) 70%, #ffffff 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @mixin retina {
+    background: linear-gradient(180deg, rgba(138, 143, 147, 1) 70%, #ffffff 100%), url("../../img/circuit-boards-background@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-size: 1396px 640px;
+    background-position: -120px 0;
+    min-height: 580px;
+    padding: 180px 0 207px 0;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+
+    padding: 145px 0 206px 0;
+    min-height: 576px;
+
+    background-position: -250px -20px;
+    background-size: cover;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 964px;
+    padding-right: 200px;
+    margin: 0 auto;
+    text-align: left;
+
+    @include vp-1023 {
+      padding-right: 5%;
+    }
+
+    @include vp-767 {
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 64px;
+      line-height: 75px;
+
+      margin-bottom: 0;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 42px;
+
+      margin-bottom: 9px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 48px;
+
+    @include vp-1023 {
+      margin: 0;
+      margin-bottom: 62px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__button {
+    padding: 15px 27px 18px 25px;
+
+    align-self: flex-start;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #f2f5f7;
+
+    background: #00b2ff;
+    border-radius: 3px;
+
+    @include vp-1023 {
+      margin-left: 47px;
+    }
+
+    @include vp-767 {
+      padding: 10px 27px 13px 25px;
+
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+
+      margin: 0;
+      width: 100%;
+    }
+
+    @include hover-focus {
+      background-color: #00b3ffd7;
+    }
+  }
+}

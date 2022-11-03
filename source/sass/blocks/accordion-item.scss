@@ -1,0 +1,66 @@
+
+@include vp-767 {
+  .accordion-item {
+    position: relative;
+
+    &__body {
+      @include vp-767 {
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.9s ease-in-out;
+      }
+    }
+
+    &.is-open .accordion-item__body {
+      visibility: visible;
+      height: auto;
+      overflow: initial;
+      opacity: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 1px;
+      top: 25px;
+      right: 27px;
+      background-color: #f8fdff;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 15px;
+      top: 18px;
+      right: 34px;
+      background-color: #f8fdff;
+    }
+
+    &.is-open {
+      &::before {
+        transform: rotate(90deg);
+        transition: 0.9s;
+      }
+    }
+
+    &.no-js .accordion-item__body {
+      visibility: visible;
+      height: auto;
+      overflow: initial;
+      opacity: 1;
+    }
+
+    &.no-js::after {
+      content: "";
+      display: none;
+    }
+
+    &.no-js::before {
+      display: none;
+    }
+  }
+}

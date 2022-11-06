@@ -105,11 +105,11 @@
     @include vp-767 {
       font-size: 14px;
 
-      &--long {
+      &--more-text {
         min-height: 190px;
       }
 
-      &--short {
+      &--less-text {
         min-height: 140px;
       }
     }

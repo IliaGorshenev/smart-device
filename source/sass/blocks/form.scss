@@ -21,7 +21,9 @@
     }
   }
 
-  &__text-input {
+  & input[type="text"],
+  input[type="tel"],
+  textarea {
     border: 0;
     margin: 0;
     padding: 15px;
@@ -58,7 +60,7 @@
     }
   }
 
-  &__textarea {
+  & textarea {
     min-height: 155px;
     width: 100%;
     padding-top: 28px;
@@ -118,7 +120,7 @@
     }
   }
 
-  &__checkbox-input .form__text {
+  & input[type="checkbox"] .form__text {
     opacity: 0.8;
     align-self: flex-end;
   }
@@ -167,7 +169,7 @@
     display: none;
   }
 
-  &__checkbox-input:checked + .form__mark .form__mark-icon {
+  & input[type="checkbox"]:checked + .form__mark .form__mark-icon {
     display: block;
   }
 }

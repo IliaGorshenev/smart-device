@@ -65,7 +65,7 @@
     color: $color-default-white;
 
     @include retina {
-      background: url("../../img/services-common-image@2x.jpg"), $color-default-black;
+      background: url("../img/services-common-image@2x.jpg"), $color-default-black;
       background-size: 1493px 817px;
       background-repeat: no-repeat;
 
@@ -83,7 +83,7 @@
     }
 
     @include retina-1023 {
-      background: url("../../img/services-common-image@2x.jpg"), $color-default-black;
+      background: url("../img/services-common-image@2x.jpg"), $color-default-black;
       background-size: 1493px 817px;
       background-repeat: no-repeat;
 
@@ -101,7 +101,7 @@
     }
 
     @include retina-767 {
-      background: url("../../img/services-common-image@2x.jpg"), $color-default-black;
+      background: url("../img/services-common-image@2x.jpg"), $color-default-black;
       background-size: 1493px 817px;
       background-repeat: no-repeat;
 
@@ -118,7 +118,7 @@
       }
     }
 
-    background: url("../../img/services-common-image.jpg"), $color-default-black;
+    background: url("../img/services-common-image.jpg"), $color-default-black;
 
     background-repeat: no-repeat;
     background-size: 1493px 817px;

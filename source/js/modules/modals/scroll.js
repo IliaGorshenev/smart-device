@@ -1,4 +1,4 @@
-const makeScroll = function () {
+const MAKE_SCROLL = function () {
   if (document.querySelector('[data-scroll-button]')) {
     document.querySelector('[data-scroll-button]').addEventListener('click', (e) => {
       e.preventDefault();
@@ -17,4 +17,4 @@ const makeScroll = function () {
   }
 };
 
-export {makeScroll};
+export {MAKE_SCROLL};

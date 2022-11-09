@@ -1,4 +1,4 @@
-const validatePhone = function () {
+const VALIDATE_PHONE = function () {
   const eventCalllback = function (e) {
     const el = e.target;
     const clearVal = el.dataset.phoneClear;
@@ -21,12 +21,12 @@ const validatePhone = function () {
       return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
     });
   };
-  const phoneInputs = document.querySelectorAll('[data-phone-pattern]');
-  for (let elem of phoneInputs) {
+  const PHONE_INPUTS = document.querySelectorAll('[data-phone-pattern]');
+  for (let elem of PHONE_INPUTS) {
     for (let ev of ['input', 'blur', 'focus']) {
       elem.addEventListener(ev, eventCalllback);
     }
   }
 };
 
-export {validatePhone};
+export {VALIDATE_PHONE};

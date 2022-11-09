@@ -1,4 +1,4 @@
-const toggleAccordion = function () {
+const TOGGLE_ACCORDION = function () {
   document.querySelectorAll('[data-accordion]').forEach((item) =>
     item.addEventListener('click', () => {
 
@@ -16,4 +16,4 @@ const toggleAccordion = function () {
   );
 };
 
-export {toggleAccordion};
+export {TOGGLE_ACCORDION};

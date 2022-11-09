@@ -1224,9 +1224,9 @@ body main {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 22px;
   line-height: 155%;
-  background: url("../../img/circuit-boards-background.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgb(138, 143, 147)), to(#ffffff));
-  background: url("../../img/circuit-boards-background.jpg"), -o-linear-gradient(top, rgb(138, 143, 147) 70%, #ffffff 100%);
-  background: url("../../img/circuit-boards-background.jpg"), linear-gradient(180deg, rgb(138, 143, 147) 70%, #ffffff 100%);
+  background: url("../img/circuit-boards-background.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgb(138, 143, 147)), to(#ffffff));
+  background: url("../img/circuit-boards-background.jpg"), -o-linear-gradient(top, rgb(138, 143, 147) 70%, #ffffff 100%);
+  background: url("../img/circuit-boards-background.jpg"), linear-gradient(180deg, rgb(138, 143, 147) 70%, #ffffff 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1731,13 +1731,13 @@ body main {
   width: 100%;
   padding: 30px 40px 50px 40px;
   color: #ffffff;
-  background: url("../../img/services-common-image.jpg"), #000000;
+  background: url("../img/services-common-image.jpg"), #000000;
   background-repeat: no-repeat;
   background-size: 1493px 817px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (max-width: auto) {
   .services__link-wrapper {
-    background: url("../../img/services-common-image@2x.jpg"), #000000;
+    background: url("../img/services-common-image@2x.jpg"), #000000;
     background-size: 1493px 817px;
     background-repeat: no-repeat;
   }
@@ -1753,7 +1753,7 @@ body main {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (max-width: 1023px) {
   .services__link-wrapper {
-    background: url("../../img/services-common-image@2x.jpg"), #000000;
+    background: url("../img/services-common-image@2x.jpg"), #000000;
     background-size: 1493px 817px;
     background-repeat: no-repeat;
   }
@@ -1769,7 +1769,7 @@ body main {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (max-width: 767px) {
   .services__link-wrapper {
-    background: url("../../img/services-common-image@2x.jpg"), #000000;
+    background: url("../img/services-common-image@2x.jpg"), #000000;
     background-size: 1493px 817px;
     background-repeat: no-repeat;
   }

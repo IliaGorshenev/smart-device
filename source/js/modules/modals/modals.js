@@ -108,7 +108,7 @@ export class Modals {
   _addListeners(modal) {
     modal.addEventListener('click', this._modalClickHandler);
     document.addEventListener('keydown', this._documentKeydownHandler);
-    document.querySelector('[data-input-name]').focus(); // добавляет фокус элементу
+    document.querySelector('[data-input-name]').focus();
   }
 
   _removeListeners(modal) {

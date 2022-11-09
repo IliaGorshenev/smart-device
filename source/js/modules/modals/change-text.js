@@ -1,26 +1,11 @@
-const makeScrollButtonShort = function () {
-  if (document.querySelector('[data-scroll-button]') !== null) {
-    document.querySelector('[data-scroll-button]').textContent = 'бесплатная консультация';
-  }
+const MAKE_TEXT_SHORT = function () {
+  document.querySelector('[data-scroll-button]').textContent = 'бесплатная консультация';
+  document.querySelector('[data-title="services"]').textContent = 'Товары и услуги Smart Device';
 };
 
-const makeScrollButtonLong = function () {
-  if (document.querySelector('[data-scroll-button]') !== null) {
-    document.querySelector('[data-scroll-button]').textContent = 'Получить бесплатную консультацию';
-  }
+const MAKE_TEXT_LONG = function () {
+  document.querySelector('[data-scroll-button]').textContent = 'Получить бесплатную консультацию';
+  document.querySelector('[data-title="services"]').textContent = 'Smart Device предлагает следующие товары и услуги';
 };
 
-const makeServicesTitleShort = function () {
-  if (document.querySelector('[data-title="services"]') !== null) {
-    document.querySelector('[data-title="services"]').textContent = 'Товары и услуги Smart Device';
-  }
-};
-
-const makeServicesTitleLong = function () {
-  if (document.querySelector('[data-title="services"]') !== null) {
-    document.querySelector('[data-title="services"]').textContent = 'Smart Device предлагает следующие товары и услуги';
-  }
-};
-
-export {makeScrollButtonShort, makeScrollButtonLong,
-  makeServicesTitleShort, makeServicesTitleLong};
+export {MAKE_TEXT_LONG, MAKE_TEXT_SHORT};
